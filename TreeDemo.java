@@ -41,7 +41,9 @@ class BinarySearchTree{
    pre-order traversal
    */
    public void preOrderTraversal(Node root){
-      //implement me
+      System.out.println(root.value);
+      preOrderTraversal(root.left);
+      preOrderTraversal(root.right);
    }
 
    
@@ -50,7 +52,9 @@ class BinarySearchTree{
    in-order traversal
    */
    public void inOrderTraversal(Node root){
-      //implement me
+      preOrderTraversal(root.left);
+      System.out.println(root.value);
+      preOrderTraversal(root.right);
    }
    
    
