@@ -75,7 +75,11 @@ class BinarySearchTree{
    with a specific value
    */
    public boolean find(Node root, int key){
-      //implemnt me
+      if(root.value == key){
+         return true;
+      }
+      preOrderTraversal(root.left);
+      preOrderTraversal(root.right);
       return false;           
    }
    
