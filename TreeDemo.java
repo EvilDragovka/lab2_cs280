@@ -75,7 +75,7 @@ class BinarySearchTree{
    with a specific value
    */
    public boolean find(Node root, int key){
-	  //implement me
+      //implemnt me
       return false;           
    }
    
@@ -86,7 +86,10 @@ class BinarySearchTree{
    with a smallest key
    */
    public int getMin(Node root){
-      //implement me
+      getMin(root.left)
+      if(root.left == null){
+         return root.value;
+      }
    }
   
   
